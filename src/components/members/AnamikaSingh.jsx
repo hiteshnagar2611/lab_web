@@ -11,7 +11,7 @@ const AnamikaSingh = () => {
         bio: (
             <>
                 <p className="mb-4">
-                    I am currently pursuing my Ph.D. at the LT Lab, where I work with{' '}
+                    I am currently pursuing my Ph.D. at the CSB Lab, where I work with{' '}
                     <a href="https://www.igib.res.in/?q=LipiThukral" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">
                         Dr. Lipi Thukral
                     </a>

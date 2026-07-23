@@ -39,7 +39,7 @@ const Navbar = () => {
                     <Link to="/" className="flex items-center space-x-2">
                         <div className={`w-8 h-8 ${scrolled ? 'text-blue-600' : 'text-white'} font-bold text-2xl`}></div>
                         <span className={`text-xl font-bold ${scrolled ? 'text-gray-900' : 'text-white'}`}>
-                            LT Lab
+                            CSB Lab
                         </span>
                     </Link>
 

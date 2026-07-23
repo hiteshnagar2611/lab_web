@@ -191,7 +191,7 @@ He is passionate about understanding RNA biology through computational approache
         'anamika-singh': {
             name: 'Anamika Singh',
             image: url('/images/team/anamika.jpg'),
-            bio: `I am currently pursuing my Ph.D. at the LT Lab, where I work with [Dr. Lipi Thukral](https://www.igib.res.in/?q=LipiThukral), and my research focuses on deciphering the role of autophagy in cancer. My work aims to understand the molecular mechanisms by which autophagy influences cancer initiation, progression, and therapeutic response, with the goal of identifying novel insights into cancer biology.
+            bio: `I am currently pursuing my Ph.D. at the CSB Lab, where I work with [Dr. Lipi Thukral](https://www.igib.res.in/?q=LipiThukral), and my research focuses on deciphering the role of autophagy in cancer. My work aims to understand the molecular mechanisms by which autophagy influences cancer initiation, progression, and therapeutic response, with the goal of identifying novel insights into cancer biology.
 
 I completed my Integrated Master's degree at NISER, Bhubaneswar. For my Master's thesis, I worked under the supervision of [Dr. Manjusha Dixit](https://nisersbs.wixsite.com/manjushadixitslab) in the field of Cancer and Molecular Biology. My research investigated the role of FRG1 in the prognosis and tumorigenesis of gastric cancer, exploring its potential contribution to disease progression and its relevance as a prognostic marker.
 

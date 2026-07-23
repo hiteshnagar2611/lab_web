@@ -18,7 +18,7 @@ const Footer = () => {
                                 <span className="text-white font-bold text-lg">CSB</span>
                             </div>
                             <div>
-                                <span className="text-lg font-bold text-slate-900 block leading-tight">LT Lab</span>
+                                <span className="text-lg font-bold text-slate-900 block leading-tight">CSB Lab</span>
                                 <span className="text-xs text-slate-500">CSIR-IGIB</span>
                             </div>
                         </Link>
