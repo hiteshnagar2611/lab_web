@@ -7,7 +7,6 @@ const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, 
 const Deepanshi = () => {
     const member = {
         name: 'Dr. Deepanshi Gahlot',
-        role: 'Postdoc',
         image: url('/images/team/deepanshi.JPG'),
         bio: `Dr. Deepanshi is a postdoctoral researcher specializing in computational protein design and molecular modeling. Her work focuses on developing novel algorithms for protein structure prediction and understanding protein-ligand interactions.
 
@@ -18,20 +17,7 @@ Research interests:
 • Drug-target interactions
 • Machine learning for protein design
 
-She is passionate about applying computational methods to solve real-world biological problems.`,
-        education: [
-            'Ph.D. in Computational Chemistry, University of Cambridge',
-            'M.S. in Chemistry, IIT Bombay',
-            'B.S. in Chemistry, Delhi University'
-        ],
-        experience: [
-            'Postdoctoral Researcher, CSIR-IGIB, India (2022–present)',
-            'Ph.D. Researcher, University of Cambridge, UK (2018–2022)',
-            'Research Intern, Schrödinger Inc. (2017)'
-        ],
-        awards: ['Cambridge Trust Scholarship', 'Best PhD Thesis Award (2022)'],
-        publications: 15,
-        joined: '2022'
+She is passionate about applying computational methods to solve real-world biological problems.`
     };
 
     return (

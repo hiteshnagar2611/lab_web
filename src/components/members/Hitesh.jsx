@@ -7,7 +7,6 @@ const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, 
 const Hitesh = () => {
     const member = {
         name: 'Hitesh Nagar',
-        role: 'Project Associate',
         image: url('/images/team/hitesh.jpg'),
         bio: (
             <>
@@ -36,22 +35,7 @@ const Hitesh = () => {
                     My research interests lie in deep learning, natural language processing, and large language models. I am particularly interested in building AI applications across domains, bridging research with real-world impact.
                 </p>
             </>
-        ),
-        education: [
-            'MBM University, Jodhpur, India (June 2025)'
-        ],
-        experience: [
-            'Secure Meters Limited, Graduate Engineer trainee(Network Security) | Udaipur, RJ July 2025 ‑ Present\n• Managed and secured computer networks by configuring firewalls, switches, and applying cybersecurity best practices to prevent threats and ensure system integrity. Managed around 50+ tickets every month.',
-            'Secure Meters Limited, Software Engineering Intern | Udaipur, RJ Jan 2025 ‑ Feb 2025\n• Designed and implemented an Employee Benevolent Software System, transitioning the company\'s process from offline (paper-based) to a fully online platform, enhancing efficiency by 70%, accessibility, and record management.',
-            'Indian Institute of Technology Hyderabad, Summer Intern | Sangareedy, TS June 2024 ‑ July 2024\n• Built and optimized a dataset of 15K+ code samples for API misuse prediction, enhancing model training efficiency and accuracy in software reliability tasks.',
-            'Indian Institute of Technology Patna, Computer Vision Intern | Remote March 2024 ‑ Apr 2024\n• Reduced recognition errors by 26% and improved text recognition accuracy by 18% in a supermarket product identification pipeline.\n• Implemented advanced image processing techniques including skeletonization, binary conversion, and ABINET based on ASTER for robust recognition across a self made labeled dataset of 250,000+ images spanning 500+ brand classes.',
-            'Indian Institute of Technology Goa, NSM Intern | Remote Jan 2024 ‑ Feb 2024\n• Developed and optimized C++ code for CFD Solver , ensuring high performance on various GPU architectures using Kokkos.\n• Converted CUDA/OpenACC code to Kokkos, enabling performance portability across NVIDIA, AMD, and Intel GPUs with CUDA and OpenMP.',
-            'Indian Institute of Technology Jodhpur, Project Intern | Jodhpur, RJ June 2023 ‑ July 2023\n• Developed and deployed a desktop application, enabling seamless text annotation in 10+ Indian regional languages for computer vision tasks; enhanced annotation process and accuracy by 40%.',
-            'Oil and Natural Gas Corporation Dehradun, Summer Trainee | Remote June 2023 ‑ July 2023\n• Led the development and implementation of machine learning models for facies identification from well logs, increasing accuracy by 30% and efficiency by 40% in geological analysis for oil discovery.'
-        ],
-        awards: ['Research Assistantship'],
-        publications: 2,
-        joined: '2024'
+        )
     };
 
     return (

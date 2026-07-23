@@ -7,7 +7,6 @@ const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, 
 const DrShailya = () => {
     const member = {
         name: 'Dr. Shailya Verma',
-        role: 'Postdoc',
         image: url('/images/team/shailyadi.JPG'),
         bio: `Dr. Shailya specializes in molecular dynamics simulations and computational biophysics. Her research focuses on understanding the dynamics of protein folding and protein-protein interactions at the atomic level.
 
@@ -18,20 +17,7 @@ Key research areas:
 • Protein-protein interaction networks
 • Computational drug design
 
-Her work combines theoretical and computational approaches to address fundamental questions in structural biology.`,
-        education: [
-            'Ph.D. in Biophysics, University of Oxford',
-            'M.S. in Physics, IIT Kanpur',
-            'B.S. in Physics, Delhi University'
-        ],
-        experience: [
-            'Postdoctoral Researcher, CSIR-IGIB, India (2021–present)',
-            'Ph.D. Researcher, University of Oxford, UK (2017–2021)',
-            'Research Associate, TIFR Mumbai (2016–2017)'
-        ],
-        awards: ['Rhodes Scholarship', 'Oxford Doctoral Prize (2021)'],
-        publications: 18,
-        joined: '2021'
+Her work combines theoretical and computational approaches to address fundamental questions in structural biology.`
     };
 
     return (

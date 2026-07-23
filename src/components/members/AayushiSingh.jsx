@@ -7,7 +7,6 @@ const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, 
 const AayushiSingh = () => {
     const member = {
         name: 'Aayushi Singh',
-        role: 'PhD Student',
         image: url('/images/team/aayushis.jpg'),
         bio: `Aayushi is a PhD student specializing in computational approaches to study protein-DNA interactions and gene regulation. Her work combines molecular modeling with genomics data.
 
@@ -18,19 +17,7 @@ Research focus:
 • Computational genomics
 • Systems biology approaches
 
-Her research aims to understand how proteins interact with DNA to regulate gene expression.`,
-        education: [
-            'B.S. in Computational Biology, IIT Delhi (2024)',
-            'Summer Research Intern, Broad Institute (2023)'
-        ],
-        experience: [
-            'PhD Student, CSIR-IGIB, India (2024–present)',
-            'Summer Research Intern, Broad Institute, USA (2023)',
-            'Undergraduate Researcher, IIT Delhi (2020–2024)'
-        ],
-        awards: ['Graduate Fellowship', 'IIT Delhi Research Excellence Award'],
-        publications: 2,
-        joined: '2024'
+Her research aims to understand how proteins interact with DNA to regulate gene expression.`
     };
 
     return (

@@ -28,7 +28,6 @@ const Navbar = () => {
         { name: 'Publications', path: '/publications' },
         { name: 'Resources', path: '/resources' },
         { name: 'News', path: '/news' },
-        { name: 'Blogs', path: '/blogs', external: true, url: 'https://www.blogs.com' },
         { name: 'Team', path: '/team' },
         { name: 'Contact', path: '/contact' }
     ];
@@ -46,31 +45,17 @@ const Navbar = () => {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-8">
-                        {navItems.map((item) =>
-                            item.external ? (
-                                <a
-                                    key={item.path}
-                                    href={item.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className={`capitalize transition-colors ${
-                                        scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'
-                                    }`}
-                                >
-                                    {item.name}
-                                </a>
-                            ) : (
-                                <Link
-                                    key={item.path}
-                                    to={item.path}
-                                    className={`capitalize transition-colors ${
-                                        scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'
-                                    } ${location.pathname === item.path ? 'font-semibold' : ''}`}
-                                >
-                                    {item.name}
-                                </Link>
-                            )
-                        )}
+                        {navItems.map((item) => (
+                            <Link
+                                key={item.path}
+                                to={item.path}
+                                className={`capitalize transition-colors ${
+                                    scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'
+                                } ${location.pathname === item.path ? 'font-semibold' : ''}`}
+                            >
+                                {item.name}
+                            </Link>
+                        ))}
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -86,29 +71,16 @@ const Navbar = () => {
                 {isMenuOpen && (
                     <div className="md:hidden bg-white shadow-lg">
                         <div className="px-4 py-4 space-y-3">
-                            {navItems.map((item) =>
-                                item.external ? (
-                                    <a
-                                        key={item.path}
-                                        href={item.url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        onClick={() => setIsMenuOpen(false)}
-                                        className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-blue-50 rounded-lg capitalize"
-                                    >
-                                        {item.name}
-                                    </a>
-                                ) : (
-                                    <Link
-                                        key={item.path}
-                                        to={item.path}
-                                        onClick={() => setIsMenuOpen(false)}
-                                        className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-blue-50 rounded-lg capitalize"
-                                    >
-                                        {item.name}
-                                    </Link>
-                                )
-                            )}
+                            {navItems.map((item) => (
+                                <Link
+                                    key={item.path}
+                                    to={item.path}
+                                    onClick={() => setIsMenuOpen(false)}
+                                    className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-blue-50 rounded-lg capitalize"
+                                >
+                                    {item.name}
+                                </Link>
+                            ))}
                         </div>
                     </div>
                 )}

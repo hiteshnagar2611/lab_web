@@ -7,7 +7,6 @@ const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, 
 const AkankshaArun = () => {
     const member = {
         name: 'Akanksha Arun',
-        role: 'PhD Student',
         image: url('/images/team/akankshadi.JPG'),
         bio: `Akanksha is a PhD student working on computational immunology and antibody design. Her research focuses on developing algorithms for therapeutic antibody development.
 
@@ -18,19 +17,7 @@ Current projects:
 • Machine learning for immunology
 • Therapeutic protein engineering
 
-She is interested in applying computational methods to accelerate drug discovery in immunology.`,
-        education: [
-            'B.S. in Biotechnology, IIT Bombay (2024)',
-            'Research Intern, Novartis (2023)'
-        ],
-        experience: [
-            'PhD Student, CSIR-IGIB, India (2024–present)',
-            'Research Intern, Novartis Institutes for BioMedical Research (2023)',
-            'Undergraduate Researcher, IIT Bombay (2020–2024)'
-        ],
-        awards: ['Bioengineering Fellowship', 'IIT Bombay Institute Medal'],
-        publications: 4,
-        joined: '2024'
+She is interested in applying computational methods to accelerate drug discovery in immunology.`
     };
 
     return (
@@ -73,7 +60,7 @@ She is interested in applying computational methods to accelerate drug discovery
                     </div>
                 </div>
 
-                                <section className="text-center">
+                <section className="text-center">
                     <div className="contact-icons flex justify-center space-x-8 mb-6">
                         <a href="mailto:contact@example.com" title="Email" className="flex flex-col items-center gap-1 text-gray-500 hover:text-blue-600 transition-colors">
                             <Mail className="w-7 h-7" />

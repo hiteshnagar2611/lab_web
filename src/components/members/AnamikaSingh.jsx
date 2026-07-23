@@ -7,30 +7,28 @@ const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, 
 const AnamikaSingh = () => {
     const member = {
         name: 'Anamika Singh',
-        role: 'PhD Student',
         image: url('/images/team/anamika.jpg'),
-        bio: `Anamika is a PhD student specializing in computational structural biology with a focus on protein-ligand interactions and drug design. Her research combines molecular modeling, molecular dynamics simulations, and machine learning approaches.
-
-Current research:
-• Protein-ligand binding studies
-• Molecular dynamics simulations
-• Virtual screening and drug design
-• Machine learning for molecular property prediction
-• Computational analysis of protein structures
-
-Her work aims to develop computational tools for understanding molecular interactions and accelerating drug discovery processes.`,
-        education: [
-            'M.S. in Computational Chemistry, IIT Delhi (2023)',
-            'B.S. in Chemistry, Delhi University (2021)'
-        ],
-        experience: [
-            'PhD Student, CSIR-IGIB, India (2024–present)',
-            'Research Assistant, IIT Delhi (2021–2023)',
-            'Summer Intern, CSIR-CDRI (2022)'
-        ],
-        awards: ['IIT Delhi Research Fellowship', 'CSIR Junior Research Fellowship'],
-        publications: 2,
-        joined: '2024'
+        bio: (
+            <>
+                <p className="mb-4">
+                    I am currently pursuing my Ph.D. at the LT Lab, where I work with{' '}
+                    <a href="https://www.igib.res.in/?q=LipiThukral" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">
+                        Dr. Lipi Thukral
+                    </a>
+                    , and my research focuses on deciphering the role of autophagy in cancer. My work aims to understand the molecular mechanisms by which autophagy influences cancer initiation, progression, and therapeutic response, with the goal of identifying novel insights into cancer biology.
+                </p>
+                <p className="mb-4">
+                    I completed my Integrated Master's degree at NISER, Bhubaneswar. For my Master's thesis, I worked under the supervision of{' '}
+                    <a href="https://nisersbs.wixsite.com/manjushadixitslab" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">
+                        Dr. Manjusha Dixit
+                    </a>{' '}
+                    in the field of Cancer and Molecular Biology. My research investigated the role of FRG1 in the prognosis and tumorigenesis of gastric cancer, exploring its potential contribution to disease progression and its relevance as a prognostic marker.
+                </p>
+                <p className="mb-4">
+                    My research interests lie in cancer biology, molecular biology, and the cellular mechanisms underlying disease progression. I am particularly interested in understanding the molecular pathways that regulate cancer development and in translating these insights toward improved therapeutic strategies.
+                </p>
+            </>
+        )
     };
 
     return (
@@ -67,9 +65,7 @@ Her work aims to develop computational tools for understanding molecular interac
                     </div>
 
                     <div className="clearfix text-gray-700 leading-relaxed mb-12">
-                        {member.bio.split('\n').map((paragraph, index) => (
-                            <p key={index} className="mb-4">{paragraph}</p>
-                        ))}
+                        {member.bio}
                     </div>
                 </div>
 

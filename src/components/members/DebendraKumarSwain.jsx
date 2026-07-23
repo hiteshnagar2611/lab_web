@@ -7,7 +7,6 @@ const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, 
 const DebendraKumarSwain = () => {
     const member = {
         name: 'Debendra Kumar Swain',
-        role: 'PhD Student',
         image: url('/images/team/debe.jpg'),
         bio: `Debendra is a PhD student specializing in computational structural biology and membrane protein modeling. His research focuses on understanding membrane protein structure and function.
 
@@ -18,19 +17,7 @@ Research interests:
 • Computational biophysics
 • Drug-membrane interactions
 
-His work aims to develop better models for membrane proteins, which are important drug targets.`,
-        education: [
-            'M.S. in Biophysics, TIFR Mumbai (2023)',
-            'B.S. in Physics, Utkal University (2021)'
-        ],
-        experience: [
-            'PhD Student, CSIR-IGIB, India (2023–present)',
-            'Research Assistant, TIFR Mumbai (2021–2023)',
-            'Summer Intern, National Centre for Biological Sciences (2022)'
-        ],
-        awards: ['TIFR Graduate Fellowship', 'DBT Junior Research Fellowship'],
-        publications: 5,
-        joined: '2023'
+His work aims to develop better models for membrane proteins, which are important drug targets.`
     };
 
     return (

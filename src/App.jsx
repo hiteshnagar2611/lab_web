@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -9,7 +9,6 @@ import Resources from './components/Resources';
 import News from './components/News';
 import Team from './components/Team';
 import Contact from './components/Contact';
-import Blogs from './components/Blogs';
 import MemberBio from './components/MemberBio';
 // Individual member pages
 import Hitesh from './components/members/Hitesh';
@@ -30,10 +29,15 @@ import Varrunavi from './components/members/Varrunavi';
 
 const App = () => {
     const location = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location.pathname]);
+
     const isMemberBioPage = location.pathname.startsWith('/team/') && location.pathname !== '/team';
 
     return (
-        <div className="min-h-screen bg-gray-50">
+        <div className="min-h-screen bg-slate-100">
             {!isMemberBioPage && <Navbar />}
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -44,9 +48,9 @@ const App = () => {
                 <Route path="/team" element={<Team />} />
                 {/* Individual member pages */}
                 <Route path="/team/hitesh-nagar" element={<Hitesh />} />
-                <Route path="/team/dr-deepanshi" element={<Deepanshi />} />
+                <Route path="/team/dr-deepanshi-gahlot" element={<Deepanshi />} />
                 <Route path="/team/dr-lipi-thukral" element={<DrLipi />} />
-                <Route path="/team/dr-shailya" element={<DrShailya />} />
+                <Route path="/team/dr-shailya-verma" element={<DrShailya />} />
                 <Route path="/team/dr-shruti-mathur" element={<DrShrutiMathur />} />
                 <Route path="/team/dr-tanushree-das" element={<DrTanushreeDas />} />
                 <Route path="/team/akanksha-kaushik" element={<AkankshaKaushik />} />
@@ -60,7 +64,6 @@ const App = () => {
                 <Route path="/team/varrunavi" element={<Varrunavi />} />
                 {/* Fallback to dynamic MemberBio for other members */}
                 <Route path="/team/:name" element={<MemberBio />} />
-                <Route path="/blogs" element={<Blogs />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
             {!isMemberBioPage && <Footer />}

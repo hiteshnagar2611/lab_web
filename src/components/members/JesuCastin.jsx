@@ -7,7 +7,6 @@ const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, 
 const JesuCastin = () => {
     const member = {
         name: 'Jesu Castin',
-        role: 'PhD Student',
         image: url('/images/team/jesu.JPG'),
         bio: `Jesu is a PhD student working on developing computational tools for RNA structure prediction and RNA-protein interactions. His research combines algorithms and machine learning.
 
@@ -18,19 +17,7 @@ Current research:
 • Computational RNA design
 • RNA therapeutics development
 
-He is passionate about understanding RNA biology through computational approaches.`,
-        education: [
-            'M.S. in Computational Biology, IIT Delhi (2023)',
-            'B.S. in Biotechnology, Anna University (2021)'
-        ],
-        experience: [
-            'PhD Student, CSIR-IGIB, India (2023–present)',
-            'Research Assistant, IIT Delhi (2021–2023)',
-            'Undergraduate Researcher, Anna University (2018–2021)'
-        ],
-        awards: ['IIT Delhi Research Fellowship', 'Anna University Gold Medal'],
-        publications: 3,
-        joined: '2023'
+He is passionate about understanding RNA biology through computational approaches.`
     };
 
     return (

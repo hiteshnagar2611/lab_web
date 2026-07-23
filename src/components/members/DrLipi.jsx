@@ -7,24 +7,10 @@ const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, 
 const DrLipi = () => {
     const member = {
         name: 'Dr. Lipi Thukral',
-        role: 'Principal Investigator',
         image: url('/images/team/LipiT.jpg'),
         bio: `Dr. Lipi Thukral obtained her Ph.D. from the University of Heidelberg, Germany (2007–2011), where she worked with Prof. Jeremy C. Smith on molecular dynamics simulations of protein folding. She then joined the group of Prof. Syma Khalid at the University of Southampton, UK, as a postdoctoral researcher. In 2013, she was awarded the prestigious DST-INSPIRE Faculty Fellowship and joined CSIR–Institute of Genomics and Integrative Biology (IGIB), India, as a computational biologist. She established her independent research group in 2016 and currently leads a computational structural biology group as a Senior Principal Scientist.
 In 2019, Dr. Thukral received the CSIR Young Scientist Award in Biological Sciences in recognition of her contributions to the field of autophagy. She is also a recipient of the India Alliance Intermediate Fellowship supported by DBT and the Wellcome Trust. She is a member of several national expert committees in computational biology and serves on the editorial boards of eLife and the Biophysical Journal, in addition to reviewing for leading international journals.
-Dr. Thukral's research focuses on understanding how biomolecular interactions at the structural level, particularly how protein–membrane interactions in autophagy drive autophagosome formation. Her work integrates large-scale molecular simulations with experimental collaborations to interpret complex biological data and guide hypothesis-driven experiments. Her lab has published extensively in the areas of protein–lipid dynamics, autophagy, and structural genomics of infectious diseases.`,
-        education: [
-            'Ph.D. in Computational Biology',
-            'M.S. in Bioinformatics, Stanford University',
-            'B.S. in Biotechnology, IIT Delhi'
-        ],
-        experience: [
-            'Senior Principal Scientist, CSIR-IGIB, India (2016–present)',
-            'Postdoctoral Researcher, University of Southampton, UK (2011–2013)',
-            'Ph.D. Researcher, University of Heidelberg, Germany (2007–2011)'
-        ],
-        awards: ['NSF CAREER Award (2023)', 'Technology Review Innovator Under 35 (2022)', 'American Chemical Society Young Investigator Award (2021)'],
-        publications: 52,
-        joined: '2018'
+Dr. Thukral's research focuses on understanding how biomolecular interactions at the structural level, particularly how protein–membrane interactions in autophagy drive autophagosome formation. Her work integrates large-scale molecular simulations with experimental collaborations to interpret complex biological data and guide hypothesis-driven experiments. Her lab has published extensively in the areas of protein–lipid dynamics, autophagy, and structural genomics of infectious diseases.`
     };
 
     return (
@@ -67,18 +53,6 @@ Dr. Thukral's research focuses on understanding how biomolecular interactions at
                     </div>
                 </div>
 
-                <section className="mb-12">
-                    <h2 className="text-2xl font-bold mb-6 text-gray-900">
-                        <a href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Awards</a>
-                    </h2>
-                    <div className="awards">
-                        <ul className="list-disc list-inside space-y-2 text-gray-700">
-                            {member.awards.map((award, index) => (
-                                <li key={index} className="text-base">{award}</li>
-                            ))}
-                        </ul>
-                    </div>
-                </section>
 
                                 <section className="text-center">
                     <div className="contact-icons flex justify-center space-x-8 mb-6">

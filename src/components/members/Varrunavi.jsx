@@ -7,7 +7,6 @@ const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, 
 const Varrunavi = () => {
     const member = {
         name: 'Varrunavi',
-        role: 'Intern',
         image: url('/images/team/varrunavi.jpg'),
         bio: `Varrunavi is an undergraduate intern focusing on molecular visualization and educational tools for structural biology. She works on creating interactive 3D models and educational content.
 
@@ -17,17 +16,7 @@ Current work:
 • User interface design
 • Scientific communication
 
-She is passionate about making science more accessible through better visualization and education.`,
-        education: [
-            'B.S. in Biology (Sophomore)'
-        ],
-        experience: [
-            'Research Intern, CSIR-IGIB, India (2024–present)',
-            'Undergraduate Researcher, Biology Department (2023–2024)'
-        ],
-        awards: ['Biology UROP Award'],
-        publications: 0,
-        joined: '2024'
+She is passionate about making science more accessible through better visualization and education.`
     };
 
     return (

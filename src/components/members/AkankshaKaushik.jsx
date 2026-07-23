@@ -7,7 +7,6 @@ const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, 
 const AkankshaKaushik = () => {
     const member = {
         name: 'Akanksha Kaushik',
-        role: 'PhD Student',
         image: url('/images/team/akankshak.jpg'),
         bio: `Akanksha is a PhD student working on developing novel computational methods for protein structure determination using cryo-EM data. Her research focuses on integrating experimental and computational approaches.
 
@@ -18,19 +17,7 @@ Current research:
 • Protein complex analysis
 • Method development for structural studies
 
-She is passionate about developing tools that make structural biology more accessible and efficient.`,
-        education: [
-            'B.S. in Biotechnology, IIT Delhi (expected 2024)',
-            'Research Intern, NIH (2023)'
-        ],
-        experience: [
-            'PhD Student, CSIR-IGIB, India (2024–present)',
-            'Research Intern, National Institutes of Health, USA (2023)',
-            'Undergraduate Researcher, IIT Delhi (2021–2023)'
-        ],
-        awards: ['Presidential Fellowship', 'IIT Delhi Academic Excellence Award'],
-        publications: 3,
-        joined: '2024'
+She is passionate about developing tools that make structural biology more accessible and efficient.`
     };
 
     return (

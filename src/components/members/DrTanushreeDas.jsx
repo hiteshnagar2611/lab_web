@@ -7,31 +7,33 @@ const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, 
 const DrTanushreeDas = () => {
     const member = {
         name: 'Dr. Tanushree Das',
-        role: 'Postdoc',
         image: url('/images/team/tanushree.JPG'),
-        bio: `Dr. Tanushree Das specializes in computational enzymology and mechanistic studies of enzyme catalysis. Her work combines quantum mechanical calculations with molecular dynamics simulations.
-
-Research interests:
-• Enzyme mechanism studies
-• Quantum chemistry calculations
-• Reaction pathway analysis
-• Computational enzymology
-• Drug-enzyme interactions
-
-Her research aims to understand the fundamental principles of enzyme catalysis and apply this knowledge to drug design.`,
-        education: [
-            'Ph.D. in Computational Chemistry, ETH Zurich',
-            'M.S. in Chemistry, IIT Madras',
-            'B.S. in Chemistry, Presidency College'
-        ],
-        experience: [
-            'Postdoctoral Researcher, CSIR-IGIB, India (2023–present)',
-            'Ph.D. Researcher, ETH Zurich, Switzerland (2019–2023)',
-            'Research Scientist, Novartis Institutes for BioMedical Research (2018–2019)'
-        ],
-        awards: ['ETH Excellence Scholarship', 'Swiss National Science Foundation Fellowship'],
-        publications: 16,
-        joined: '2023'
+        bio: (
+            <>
+                <p className="mb-4">
+                    I am a CSIR Research Associate at CSIR-IGIB working with{' '}
+                    <a
+                        href="https://www.igib.res.in/?q=LipiThukral"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:text-blue-800 underline"
+                    >
+                        Dr. Lipi Thukral
+                    </a>{' '}
+                    at the intersection of computational biology, molecular simulations, and machine learning. My research focuses on the NOTCH signaling pathway, where I study how protein conformations and mutations influence cell-cell communication and therapeutic targeting. I use molecular dynamics simulations, structural modeling, and advanced AI-driven approaches to investigate receptor-ligand interactions, integrating genomic data to elucidate how mutations influence protein structure and function.
+                </p>
+                <p className="mb-4">
+                    I completed my Ph.D. at Department of Chemistry, University of Calcutta, India, under the supervision of{' '}
+                    <a href="https://scholar.google.com/citations?user=JRK4UNwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">
+                        Prof. Chaitali Mukhopadhyay
+                    </a>
+                    , where I worked on protein-ligand interactions and membrane-associated systems.
+                </p>
+                <p className="mb-4">
+                    I am broadly interested in applying computational approaches to uncover molecular mechanisms and support drug discovery.
+                </p>
+            </>
+        )
     };
 
     return (
@@ -68,21 +70,19 @@ Her research aims to understand the fundamental principles of enzyme catalysis a
                     </div>
 
                     <div className="clearfix text-gray-700 leading-relaxed mb-12">
-                        {member.bio.split('\n').map((paragraph, index) => (
-                            <p key={index} className="mb-4">{paragraph}</p>
-                        ))}
+                        {member.bio}
                     </div>
                 </div>
 
                                 <section className="text-center">
                     <div className="contact-icons flex justify-center space-x-8 mb-6">
-                        <a href="mailto:contact@example.com" title="Email" className="flex flex-col items-center gap-1 text-gray-500 hover:text-blue-600 transition-colors">
+                        <a href="mailto:tanushreedaschem@gmail.com" title="Email" className="flex flex-col items-center gap-1 text-gray-500 hover:text-blue-600 transition-colors">
                             <Mail className="w-7 h-7" />
                             <span className="text-xs font-medium">Email</span>
                         </a>
-                        <a href="#" title="Download CV" className="flex flex-col items-center gap-1 text-gray-500 hover:text-blue-600 transition-colors">
+                        <a href="https://scholar.google.com/citations?hl=en&user=ArdA0ScAAAAJ" title="Google Scholar" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-gray-500 hover:text-blue-600 transition-colors">
                             <FileText className="w-7 h-7" />
-                            <span className="text-xs font-medium">CV</span>
+                            <span className="text-xs font-medium">Scholar</span>
                         </a>
                         <a href="#" title="LinkedIn" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-gray-500 hover:text-blue-700 transition-colors">
                             <Linkedin className="w-7 h-7" />

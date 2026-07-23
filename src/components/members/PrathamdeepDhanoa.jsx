@@ -7,7 +7,6 @@ const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, 
 const PrathamdeepDhanoa = () => {
     const member = {
         name: 'Prathamdeep Dhanoa',
-        role: 'Project Associate',
         image: url('/images/team/pratham.jpg'),
         bio: `Prathamdeep is a project associate focusing on data analysis and computational pipelines for structural biology research. He develops automated workflows for large-scale data processing.
 
@@ -18,19 +17,7 @@ Skills and expertise:
 • Statistical analysis
 • Scientific computing
 
-His work supports the lab's research by providing efficient computational solutions.`,
-        education: [
-            'M.S. in Computational Biology',
-            'B.S. in Biotechnology, IIT Kharagpur'
-        ],
-        experience: [
-            'Project Associate, CSIR-IGIB, India (2024–present)',
-            'Data Analyst, Biotech Company (2022–2024)',
-            'Research Intern, IIT Kharagpur (2021–2022)'
-        ],
-        awards: ['Computational Biology Fellowship'],
-        publications: 1,
-        joined: '2024'
+His work supports the lab's research by providing efficient computational solutions.`
     };
 
     return (

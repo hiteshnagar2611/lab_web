@@ -7,7 +7,6 @@ const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, 
 const DrShrutiMathur = () => {
     const member = {
         name: 'Dr. Shruti Mathur',
-        role: 'Postdoc',
         image: url('/images/team/shruti.jpeg'),
         bio: `Dr. Shruti Mathur works on developing machine learning models for protein structure prediction and function annotation. Her research bridges artificial intelligence and structural biology.
 
@@ -18,20 +17,7 @@ Research focus:
 • AI-driven drug discovery
 • Computational genomics
 
-She is particularly interested in applying cutting-edge AI techniques to solve complex biological problems.`,
-        education: [
-            'Ph.D. in Computer Science, Carnegie Mellon University',
-            'M.S. in Computational Biology',
-            'B.S. in Computer Science, IIT Delhi'
-        ],
-        experience: [
-            'Postdoctoral Researcher, CSIR-IGIB, India (2020–present)',
-            'Ph.D. Researcher, Carnegie Mellon University, USA (2016–2020)',
-            'Software Engineer, Google Research (2015–2016)'
-        ],
-        awards: ['Google PhD Fellowship', 'Presidential Fellowship'],
-        publications: 22,
-        joined: '2020'
+She is particularly interested in applying cutting-edge AI techniques to solve complex biological problems.`
     };
 
     return (

@@ -7,7 +7,6 @@ const url = (filePath) => `${import.meta.env.BASE_URL}${filePath.replace(/^\//, 
 const Nabajit = () => {
     const member = {
         name: 'Nabajit',
-        role: 'Intern',
         image: url('/images/team/nabojit.png'),
         bio: `Nabajit is an undergraduate intern working on machine learning applications in structural biology. He is developing models for protein classification and prediction tasks.
 
@@ -17,17 +16,7 @@ Current projects:
 • Model evaluation and validation
 • Scientific computing
 
-He is gaining valuable experience in applying AI to biological problems.`,
-        education: [
-            'B.S. in Computer Science (Sophomore)'
-        ],
-        experience: [
-            'Research Intern, CSIR-IGIB, India (2024–present)',
-            'Undergraduate Researcher, University Project (2023–2024)'
-        ],
-        awards: ['UROP Fellowship'],
-        publications: 0,
-        joined: '2024'
+He is gaining valuable experience in applying AI to biological problems.`
     };
 
     return (
